@@ -1,9 +1,7 @@
 App({
 
   onLaunch: function () {
-
-
-
+    
   },
 
   globalData: {
