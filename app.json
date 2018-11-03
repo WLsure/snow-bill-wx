@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/addbill/addbill",
+    "pages/user/user",
+    "pages/billlist/billlist"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarTitleText": "小雪的记账簿",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/add1.png",
+        "iconPath": "images/add.png",
+        "pagePath": "pages/addbill/addbill",
+        "text": "添加"
+      },
+      {
+        "selectedIconPath": "images/list1.png",
+        "iconPath": "images/list.png",
+        "pagePath": "pages/billlist/billlist",
+        "text": "列表"
+      },
+      {
+        "selectedIconPath": "images/user1.png",
+        "iconPath": "images/user.png",
+        "pagePath": "pages/user/user",
+        "text": "用户"
+      }
+    ]
+  }
+}

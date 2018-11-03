@@ -1,0 +1,67 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+  <form bindsubmit="formSubmit">
+    <input name="userid" hidden value="{{userid}}" tyoe="hide" placeholder="名称"/>
+
+    
+    <view class="page__bd">
+      <view class="weui-cells__title">表单</view>
+      <view class="weui-cells weui-cells_after-title">
+      
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label">项目</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input class="weui-input" name="name" placeholder="项目"/>
+            </view>
+        </view>
+
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label">类别</view>
+            </view>
+            <view class="weui-cell__bd">
+                <picker bindchange="bindPickerChange" name="categoryid" value="{{index}}" range="{{categoryArray}}" >
+                    <view class="weui-input">{{categoryArray[index]}}</view>
+                </picker>
+            </view>
+        </view>
+
+
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label">日期</view>
+            </view>
+            <view class="weui-cell__bd">
+                <picker mode="date" bindchange="bindDateChange" name="buydate"  value="{{date}}" start="2018-10-01" end="2099-01-01" >
+                    <view class="weui-input">{{date}}</view>
+                </picker>
+            </view>
+        </view>
+        
+       
+
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label">数量</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input class="weui-input" type='number' name="number" value="1" placeholder="数量"/>
+            </view>
+        </view>
+
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label">金额</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input class="weui-input" type='digit' name="money" placeholder="金额"/>
+            </view>
+        </view>
+        
+        <button type="primary" size="default" form-type='submit'> 提交 </button>
+      </view>
+    </view>
+  </form>
+
+</view>
