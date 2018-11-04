@@ -4,7 +4,7 @@
 
     
     <view class="page__bd">
-      <view class="weui-cells__title">表单</view>
+      <view class="weui-cells__title">支出</view>
       <view class="weui-cells weui-cells_after-title">
       
         <view class="weui-cell weui-cell_input">
@@ -39,16 +39,6 @@
             </view>
         </view>
         
-       
-
-        <view class="weui-cell weui-cell_input">
-            <view class="weui-cell__hd">
-                <view class="weui-label">数量</view>
-            </view>
-            <view class="weui-cell__bd">
-                <input class="weui-input" type='number' name="number" value="1" placeholder="数量"/>
-            </view>
-        </view>
 
         <view class="weui-cell weui-cell_input">
             <view class="weui-cell__hd">

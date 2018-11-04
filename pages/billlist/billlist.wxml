@@ -5,14 +5,16 @@
         <view class="weui-cells__title">账单列表</view>
         <view class="weui-cells weui-cells_after-title">
             <block wx:for="{{billlist}}" wx:key="{{index}}">
-                <view class="weui-cell">
+                <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                     <view class="weui-cell__hd">
                         <image src="../../images/star.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
                     </view>
                     <view class="weui-cell__bd">{{item.name}}</view>
                     <view class="weui-cell__bd">{{item.buydate}}</view>
-                    <view class="weui-cell__ft">{{item.money}}</view>
-                </view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access">{{item.money}}</view>
+                </navigator>
+
+
             </block>
         </view>
     </view>
